@@ -20,7 +20,7 @@ export class UserService {
       throw new Error('User with this CPF or email already exists');
     }
 
-    const user = new User({ id: uuidv4(), ...data, balance: 0 });
+    const user = new User({ id: uuidv4(), ...data, balance: 200 });
     return this.userRepository.create(user);
   }
 
