@@ -114,3 +114,8 @@ curl -X POST http://localhost:3000/transactions/maintenance \
 
 
 ```
+### Test:
+
+```
+npx jest
+```
