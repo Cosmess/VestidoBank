@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "3c287ec8-5b17-44af-a844-5a12545bdf65",
+		"name": "VestidoBank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "4969583"
+	},
+	"item": [
+		{
+			"name": "transfer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"senderCPF\": \"4758102589\",\r\n  \"receiverCPF\": \"4758102588\",\r\n  \"amount\": 100\r\n}"
+				},
+				"url": "http://localhost:3000/transfer"
+			},
+			"response": []
+		},
+		{
+			"name": "Get users by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/users/3c7925d5-8190-421e-90fc-65a5ba044447"
+			},
+			"response": []
+		},
+		{
+			"name": "create user 01",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fullName\": \"joao Silva\",\r\n  \"cpf\": \"4758102589\",\r\n  \"email\": \"joao.silva@example.com\",\r\n  \"password\": \"senha123\",\r\n  \"type\": \"user\"\r\n}"
+				},
+				"url": "http://localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "create user 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fullName\": \"Maria Silva\",\r\n  \"cpf\": \"4758102588\",\r\n  \"email\": \"maria.silva@example.com\",\r\n  \"password\": \"senha123\",\r\n  \"type\": \"user\"\r\n}"
+				},
+				"url": "http://localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "get all transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/transactions"
+			},
+			"response": []
+		},
+		{
+			"name": "transactions maintenance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"transactionId\": \"55167f24-d57b-47b0-8408-ce9afb44c6bf\",\r\n  \"status\": \"approved\"\r\n}"
+				},
+				"url": "http://localhost:3000/transactions/maintenance"
+			},
+			"response": []
+		},
+		{
+			"name": "get transactions by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/transactions/669b706f-0723-4b92-8499-16b36f08dd94"
+			},
+			"response": []
+		}
+	]
+}
