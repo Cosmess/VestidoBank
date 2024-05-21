@@ -18,6 +18,16 @@ npm install
 ```
 npm start
 ```
+### .ENV
+
+```
+DB_DATABASE=vestidobank
+DB_DIALECT=mysql
+DB_USERNAME=root
+DB_PASSWORD=
+DB_HOST=localhost
+```
+
 
 ### Rotas:
 1. Criar Usuário
